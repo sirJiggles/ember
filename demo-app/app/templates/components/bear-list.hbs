@@ -1,0 +1,10 @@
+{{input value=bearName}}
+<button {{action "addBear"}}>Add bear</button>
+
+<ul>
+  {{#each bears as |bear|}}
+    <li>{{bear}}</li>
+  {{/each}}
+</ul>
+
+<button {{action "saveBears"}}>Save bears</button>
